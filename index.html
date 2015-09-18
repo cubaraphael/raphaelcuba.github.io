@@ -1,23 +1,62 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raphael Cuba - Software Craftsman</title>
 
-<div class="home">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software Craftsman from Brazil">
+  <meta name="robots" content="index, follow">
+  <meta charset="utf-8">
 
-  <h1 class="page-heading">Posts</h1>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div id="masthead">
+    <div id="focalpoint-container">
+      <div id="focalpoint-image"></div>
+      <div id="focalpoint-name">Raphael Cuba</div>
+      <div id="focalpoint-description">
+        <p>Software Craftsman</p>
+      </div>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <nav>
+      <div>
+        <a href="https://github.com/raphaelcuba" target="_blank">
+          look my projects at Github
+        </a>
+      </div>
+      <div>
+        <a href="/blog/">
+          read my articles at my blog
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/pub/raphael-cuba/40/771/74" target="_blank">
+          read more about my professional life at my LinkedIn
+        </a>
+      </div>
+      <div>
+        <a href="mailto:raphael@raphaelcuba.com">
+          contact me at raphael@raphaelcuba.com
+        </a>
+      </div>
+    </nav>
+  </div>
 
-</div>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "email": "mailto:raphael@raphaelcuba.com",
+      "image": "raphael-cuba.png",
+      "jobTitle": "Software Craftsman",
+      "name": "Raphael Cuba",
+      "url": "https://www.raphaelcuba.com/"
+    }
+  </script>
+</body>
+</html>

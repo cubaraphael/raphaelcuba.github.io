@@ -1,0 +1,155 @@
+html, body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  /* This causes the font-size basis to be 10px, so 1.0em is equivalent to 10px, 2.0em to 20px, etc. */
+  font-weight: 400;
+  color: #333;
+  background-color: #F9F9F9;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+/* By default, the body element (where the content is held) will be invisible, then when the page loads the fadeInDown animation will play. */
+body {
+  opacity: 0;
+  animation: fadeInDown 1200ms ease 300ms 1 normal forwards;
+  -webkit-animation: fadeInDown 1200ms ease 300ms 1 normal forwards; }
+
+/* Styling for links, removes underlines from all links. */
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+/* Masthead contains all content in the page, ensures that it stays in a single column regardless of screen width. */
+#masthead {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 700px; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+    -webkit-transform: translate3d(0, -10%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+    -webkit-transform: translate3d(0, -10%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none; } }
+
+#focalpoint-container {
+  display: block;
+  margin-top: 75px;
+  width: 100%; }
+
+#focalpoint-name {
+  display: block;
+  flex-grow: 1;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 200; }
+
+/* Styling for my image. */
+#focalpoint-image {
+  display: block;
+  flex-shrink: 1;
+  position: relative;
+  margin: auto;
+  background-image: url(raphael-cuba.jpg);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  /* Forces the circle shape for the image. */
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+
+#focalpoint-description {
+  display: block;
+  flex-grow: 1;
+  position: relative;
+  padding-top: 5px;
+  margin: auto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  margin: auto;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 700px;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #AAAAB2;
+  fill: #AAAAB2;
+  transition: all 400ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000000;
+  fill: #000000;
+}
+
+
+@media all and (max-width: 700px) {
+  nav {
+    bottom: 20px;
+  }
+}
+
+/* Styling for mobile devices with heights greater than 525px (pretty much everything other than the iPhone 4S and below.) */
+@media all and (max-width: 700px) and (min-height: 525px) {
+  #focalpoint-container {
+    margin-top: 40px; }
+
+  #focalpoint-image {
+    height: 200px;
+    width: 200px; }
+
+  #focalpoint-description {
+    font-size: 1.6em;
+    padding-top: 2px; } }
+/* Styling for mobile devices with heights less than 525px (e.g. iPhone 4S and below). */
+@media all and (max-width: 700px) and (max-height: 525px) {
+  #focalpoint-container {
+    margin-top: 10px; }
+
+  #focalpoint-image {
+    height: 180px;
+    width: 180px; } }
