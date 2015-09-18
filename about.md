@@ -1,11 +1,10 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre mim
+permalink: /sobre-mim/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Trabalho com desenvolvimento de software desde 2011.
+Atualmente sou desenvolvedor na [Estante Virtual](http://www.estantevirtual.com.br/){:target="_blank"}
+e CTO no [Qual a Boa Rio?](http://www.qualaboario.com.br/){:target="_blank"}.
+Já participei de projetos para outras empresas grandes como [SulAmérica](http://portal.sulamericaseguros.com.br/){:target="_blank"} e [Globo.com](http://www.globo.com/){:target="_blank"}.
